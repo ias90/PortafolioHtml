@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Slambook</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<form action="enviar.php" method="post"></form>
+		<h1>Slam Book</h1>
+		<section id="preguntas">
+			<p>
+				<label for="name">Nombre y Apellidos</label>
+				<input type="text" name="nombres" id="name">
+			</p>
+			<p>
+				<label for="birth">Fecha de nacimiento</label>
+				<input type="date" name="nacimiento" id="birth">
+			</p>
+			<fieldset>
+				<legend>Sexo:</legend>
+				<ul>
+					<li>
+						<label>
+							<input type="radio" name="sexo" value="hombre" checked>Hombre
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="radio" name="sexo" value="mujer">Mujer
+						</label>
+					</li>
+				</ul>
+			</fieldset>
+			<p>
+				<label for="phone">Numero de telefono</label>
+					<input type="tel" name="telefono" id="phone">
+				
+			</p>
+			<p>
+				<label for="foto">Sube tu foto de perfil</label>
+				<input type="file" name="foto" id="foto" multiple accept="image/*, video/*">
+			</p>
+			<p>
+				<label for="color">Color favorito</label>
+				<input type="color" name="color" id="color">
+			</p>
+			<p>
+				<label for="hour">Hora que te despiertas</label>
+				<input type="time" name="hora" id="hour">
+			</p>
+			<p>
+				<label for="number">Numero favorito</label>
+				<input type="number" name="numero" id="number" min="4" maxlength="8" step="2">
+			</p>
+			<p>
+				<label for="mydatetimelocal">Fecha y hora mas imporante</label>
+				<input type="datetime-local" name="fechayhora" id="mydatetimelocal">
+			</p>
+			<p>
+				<label for="month">Elige un mes y un año</label>
+				<input type="month" name="mes" id="month">
+			</p>
+			<p>
+				<label for="week">Elige una semana del año</label>
+				<input type="week" name="Semana" id="week">
+			</p>
+			<p>
+				<label for="volume">Volumen favorito</label>
+				<input type="range" name="volumen" id="volume">
+			</p>
+			<fieldset>
+				<ul>
+					<li>
+						<label>
+							<input type="checkbox" name="confirmacion">Juro que todas mis respuestas son verdaderas
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" name="confirmacion">Acepto que cualquier otro usuario vea mis respuestas
+						</label>
+					</li>
+				</ul>
+			</fieldset>
+			<input type="hidden" name="idioma" value="spanish">
+		</section>
+		<section id="botones">
+			<p>
+				<input type="submit" name="">
+			</p>
+			<p>
+				<input type="reset" name="">
+			</p>
+		</section>
+</body>
+</html>

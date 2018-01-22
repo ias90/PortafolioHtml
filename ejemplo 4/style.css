@@ -1,0 +1,23 @@
+input[type="image"]{
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+}
+
+fieldset{
+	padding: 0;
+	border: none;
+}
+
+input[type="search"]{
+	display: inline-block;
+	padding: 10px;
+	border-radius: 4px;
+	font-size: 18px;
+	border: none;
+	background-color: #eaeaea;
+}
+
+
+
+
